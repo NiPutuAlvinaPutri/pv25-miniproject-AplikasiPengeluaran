@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="styleSheet">
+   <string>
+    QWidget {
+        background-color: #f4f4f4;
+        font-size: 12pt;
+        color: #333;
+    }
+    QLabel {
+        color: #0066cc;
+        font-weight: bold;
+    }
+    QPushButton {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    QPushButton:hover {
+        background-color: #45a049;
+    }
+    QTableWidget {
+        border: 1px solid #ccc;
+        background-color: #ffffff;
+    }
+   </string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLabel" name="namaLabel">
+      <property name="text">
+       <string>Nama: Ni Putu Alvina Putri</string>
+      </property>
+      <property name="alignment">
+       <set>Qt.AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="nimLabel">
+      <property name="text">
+       <string>NIM: F1D022017</string>
+      </property>
+      <property name="alignment">
+       <set>Qt.AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QFormLayout" name="formLayout">
+      <item row="0" column="0">
+       <widget class="QLineEdit" name="pengeluaranInput"/>
+      </item>
+      <item row="1" column="0">
+       <widget class="QSpinBox" name="hargaInput"/>
+      </item>
+      <item row="2" column="0">
+       <widget class="QSpinBox" name="jumlahInput"/>
+      </item>
+      <item row="3" column="0">
+       <widget class="QComboBox" name="kategoriComboBox"/>
+      </item>
+      <item row="4" column="0">
+       <widget class="QDateEdit" name="tanggalInput"/>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QPushButton" name="tambahButton">
+      <property name="text">
+       <string>Tambah Pengeluaran</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QTableWidget" name="table">
+      <property name="rowCount">
+       <number>0</number>
+      </property>
+      <property name="columnCount">
+       <number>5</number>
+      </property>
+      <property name="horizontalHeaderLabels">
+       <stringlist>
+        <string>Nama</string>
+        <string>Harga</string>
+        <string>Jumlah</string>
+        <string>Kategori</string>
+        <string>Tanggal</string>
+       </stringlist>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="totalLabel">
+      <property name="alignment">
+       <set>Qt.AlignRight</set>
+      </property>
+      <property name="text">
+       <string>Total Belanja: Rp 0</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
